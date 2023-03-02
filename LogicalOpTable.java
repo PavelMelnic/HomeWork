@@ -29,6 +29,6 @@ public class LogicalOpTable {
         System.out.print((p&q?1:0) + "\t" + (p|q?1:0) + "\t");
         System.out.println((p^q?1:0) + "\t" + (!p?1:0));
 
-
+        System.out.println("Done!");
     }
 }
