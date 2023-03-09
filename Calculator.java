@@ -6,7 +6,7 @@ public class Calculator {
     public static void main(String[] args) {
         double num1;
         double num2;
-        char op;
+        char oper;
 
         Scanner reader = new Scanner(System.in);
         System.out.print("Enter first number: ");
@@ -17,8 +17,8 @@ public class Calculator {
         System.out.println("1. Sum");
         System.out.println("2. Average");
         System.out.println("3. Compare");
-        op = reader.next().charAt(0);
-        switch (op) {
+        oper = reader.next().charAt(0);
+        switch (oper) {
             case '1' -> System.out.println("The sum result is: " + (num1 + num2));
             case '2' -> System.out.println("The average result is: " + ((num1 + num2) / 2));
             case '3' -> {
