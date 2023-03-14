@@ -2,12 +2,12 @@ package HomeWork;
 class Help {
     void help(int what) {
         switch (what) {
-            case '1':
+            case '1' -> {
                 System.out.println("Onepaтop if:\n");
                 System.out.println("if(ycлoвиe) оператор;");
                 System.out.println("else оператор;");
-                break;
-            case '2':
+            }
+            case '2' -> {
                 System.out.println("Oпepaтop switch:\n");
                 System.out.println("switch(выpaжeниe) {");
                 System.out.println(" case константа:");
@@ -15,30 +15,30 @@ class Help {
                 System.out.println(" break;");
                 System.out.println(" // ...");
                 System.out.println("}");
-                break;
-            case '3':
+            }
+            case '3' -> {
                 System.out.println("Onepaтop for:\n");
                 System.out.print("for(инициaлизaция; условие; итерация)");
                 System.out.println(" оператор;");
-                break;
-            case '4':
+            }
+            case '4' -> {
                 System.out.println("Onepaтop while:\n");
                 System.out.println("while(ycлoвиe) оператор;");
-                break;
-            case '5':
+            }
+            case '5' -> {
                 System.out.println("Oпepaтop do-while:\n");
                 System.out.println("do {");
                 System.out.println(" оператор;");
                 System.out.println("} while (условие;");
-                break;
-            case '6':
+            }
+            case '6' -> {
                 System.out.println("Oпepaтop break:\n");
                 System.out.println("break; или break метка;");
-                break;
-            case '7':
+            }
+            case '7' -> {
                 System.out.println("Oпepaтop continue:\n");
                 System.out.println("continue; или continue метка;");
-                break;
+            }
         }
         System.out.println();
     }
@@ -54,7 +54,6 @@ class Help {
         System.out.print("Bыбepитe (q - выход): ");
     }
     boolean isvalid (int ch) {
-        if(ch < '1' | ch>'7'& ch!='q') return false;
-        else return true;
+        return !(ch < '1' | ch > '7' & ch != 'q');
     }
 }
