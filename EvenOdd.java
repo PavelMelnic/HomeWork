@@ -3,6 +3,7 @@ package HomeWork;
 import java.util.Scanner;
 class EvenOdd {
     public static void main(String[] args) {
+
         for (; ; ) {
             double num;
             Scanner n = new Scanner(System.in);
@@ -14,6 +15,7 @@ class EvenOdd {
             } else {
                 System.out.print("Number " + num + " is ODD");
             }
+
 
             System.out.println();
         }
