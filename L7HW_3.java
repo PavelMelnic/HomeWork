@@ -1,10 +1,10 @@
 package HomeWork;
 
-class NumberFormatException{}
+
 public class L7HW_3 {
     public static void main(String[] args) {
 
-        String longestWord[] = {"Show", "must", "goooooo", "on!"};
+        String longestWord[] = {"Show", "must", "gooooo", "on!"};
         int l=0;
         String word = null;
 
